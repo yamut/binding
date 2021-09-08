@@ -13,7 +13,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->when(App\Services\FooService::class)
+        $this->app->when(\App\Services\FooService::class)
             ->needs('$a')
             ->give(1);
     }
